@@ -1,0 +1,12 @@
+{
+    "name": "danilo/package",
+    "description": "description",
+    "authors": [
+        {
+            "name": "Danilo",
+            "email": "danilo.tapiah@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
