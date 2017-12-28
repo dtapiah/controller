@@ -25,7 +25,7 @@ class CalculatorServiceProvider extends ServiceProvider
     public function register()
     {
         // register our controller
-        $this->app->make('Dev\Prueba\Controllers\CalculatorController');
+        $this->app->make('Dev\Prueba\CalculatorController');
         $this->loadViewsFrom(__DIR__.'/views', 'prueba');
     }
 }
