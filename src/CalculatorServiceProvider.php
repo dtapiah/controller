@@ -13,11 +13,9 @@ class CalculatorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
         include __DIR__.'/routes.php';
         $this->publishes([
             __DIR__.'/views' => base_path('resources/views'),
-            __DIR__.'/hola' => base_path('resources'),
         ]);
     }
 
@@ -28,7 +26,6 @@ class CalculatorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // register our controller
         $this->app->make('Dev\Prueba\CalculatorController');
         $this->loadViewsFrom(__DIR__.'/views', 'prueba');
     }
